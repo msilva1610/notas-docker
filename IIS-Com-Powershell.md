@@ -87,6 +87,12 @@ DefaultAppPool           Started      icareclientes
 ### Listando um especifico application pool e suas propriedades
 
 ```
+get-item IIS:\AppPools\DefaultAppPool | Format-List -Property *
+```
+
+Resultado:
+
+```
 name                        : DefaultAppPool
 queueLength                 : 1000
 autoStart                   : True
@@ -118,6 +124,12 @@ ChildElements               : {processModel, recycling, failure, cpu...}
 ElementTagName              : add
 Methods                     : {Start, Stop, Recycle}
 Schema                      : Microsoft.IIs.PowerShell.Framework.ConfigurationElementSchema
+```
+
+Pode especificar a propriedade
+
+```
+get-item IIS:\AppPools\DefaultAppPool | Format-List -Property PSDrive
 ```
 
 ### Analisar as propriedades detalhadas de um ChildElement
