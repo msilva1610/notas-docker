@@ -16,3 +16,8 @@ git push -u origin master
 git remote add origin https://github.com/msilva1610/notas-docker.git
 git push -u origin master
 ```
+
+### git setup login
+
+$ git config --global user.name "msilva1610"
+$ git config --global user.email johndoe@example.com
