@@ -18,6 +18,7 @@ git push -u origin master
 ```
 
 ### git setup login
-
+```
 $ git config --global user.name "msilva1610"
-$ git config --global user.email johndoe@example.com
+$ git config --global user.email "johndoe@example.com"
+```
